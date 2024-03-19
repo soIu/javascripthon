@@ -157,6 +157,8 @@ def Call_new(t, x):
         # TODO: generalize args mangling and apply here
         # assert not any([x.keywords, x.starargs, x.kwargs])
         subj = x
+        # Different with original metapensiero, we didn't infer CapitalizedClass automatically to class. Instead we rely on 'new' keyword
+        return Call_default(t, subj, operator='')
     elif isinstance(x.func, ast.Name) and x.func.id == 'new':
         subj = x.args[0]
     else:
