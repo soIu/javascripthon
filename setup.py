@@ -48,8 +48,8 @@ setup(
     zip_safe=False,
     namespace_packages=['metapensiero'],
     install_requires=[
-        'setuptools',
-        'dukpy',
+        #'setuptools',
+        #'dukpy',
     ],
     extras_require={
         'dev': [
