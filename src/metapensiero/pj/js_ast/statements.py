@@ -32,7 +32,7 @@ class JSVarDeclarer(JSStatement):
 
 class JSVarStatement(JSVarDeclarer):
     def emit(self, keys, values, unmovable=False):
-        yield from self.with_kind('var', keys, values)
+        yield from self.with_kind('let', keys, values)
 
 
 class JSLetStatement(JSVarDeclarer):
