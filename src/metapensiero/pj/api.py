@@ -13,7 +13,7 @@ import logging
 import os
 import textwrap
 
-import dukpy
+#import dukpy
 
 from .processor.transforming import Transformer
 from .processor.util import Block
